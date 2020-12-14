@@ -7,7 +7,7 @@
                 社員番号かパスワードが間違っています。
             </div>
         </c:if>
-        <c:if test="{flush != null}">
+        <c:if test="${flush != null}">
             <div id="flush_success">
                 <c:out value="${flush}"></c:out>
             </div>
@@ -19,7 +19,7 @@
             <br /><br />
 
             <label for="password">パスワード</label><br />
-            <input type="password" name="password"  />
+            <input type="password" name="password" />
             <br /><br />
 
             <input type="hidden" name="_token" value="${_token}" />
